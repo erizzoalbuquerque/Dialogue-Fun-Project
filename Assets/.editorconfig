@@ -1,0 +1,13 @@
+[*.cs]
+# Prefer underscore prefix for private/protected fields
+dotnet_naming_rule.private_members_with_underscore.symbols = private_members
+dotnet_naming_rule.private_members_with_underscore.style = underscore_camel_case
+dotnet_naming_rule.private_members_with_underscore.severity = suggestion
+
+# Symbol groups
+dotnet_symbol_specification.private_members.applicable_kinds = field
+dotnet_symbol_specification.private_members.applicable_accessibilities = private, private_protected
+
+# Naming styles
+dotnet_naming_style.underscore_camel_case.required_prefix = _
+dotnet_naming_style.underscore_camel_case.capitalization = camel_case

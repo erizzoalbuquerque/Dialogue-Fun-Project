@@ -1,0 +1,46 @@
+﻿title: Start
+---
+<<declare $terrified = false as bool>>
+
+<<if $terrified>>
+    <<jump Terrified>>
+<<endif>>
+
+Capsley: Oh, no! My voice is terrible!
+Capsley: Someone did a lazy job while creating my voice!
+Capsley: Well, it's better than nothing...
+
+-> Is it?
+    Capsley: Yeah. I'm happy with it.
+    Capsley: Good job, creator.
+    (Capsley seems whole and full of joy)
+-> Can you sing Sinatra?
+    <<jump Sinatra>>
+===
+
+title: Terrified
+position: -3,475
+---
+Capsley: I'll never sing again.
+Capsley: At least for a few minutes.
+===
+
+title: Sinatra
+position: 4,246
+---
+Capsley: ♫ If I can make it there ♫
+Capsley: ♫ I'll make it anywhere ♫
+Capsley: ♫ It's up to you ♫
+Capsley: ♫ New York, Neeew Yoooooooooooork! ♫
+Capsley: ...
+<<set $terrified = true>>
+Capsley: Oh, no! It's terrible!
+<<jump Terrified>>
+===
+
+title: Test
+---
+Capsley: Let's go!
+Capsley: Ooooooooooooooooooooooooooooooooooooooooooooooo!
+Capsley: ..............................................
+===
