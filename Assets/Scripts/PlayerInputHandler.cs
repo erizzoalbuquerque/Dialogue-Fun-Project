@@ -4,7 +4,7 @@ using UnityEngine.InputSystem;
 public class PlayerInputHandler : MonoBehaviour
 {
     [SerializeField] PlayerInput _playerInput;
-    [SerializeField] PlayerCharacter _playerCharacter;
+    [SerializeField] CharacterController2d _playerCharacter;
     [SerializeField] Interactor _interactor;
 
     InputAction _moveAction;
@@ -29,7 +29,7 @@ public class PlayerInputHandler : MonoBehaviour
         Vector2 moveInput = _moveAction.ReadValue<Vector2>();
 
         // Calculate movement direction (converting 2D input to 3D world space)
-        Vector3 moveDirection = new Vector3(moveInput.x, 0, moveInput.y).normalized;
+        Vector3 moveDirection = new Vector3(moveInput.x, moveInput.y, 0).normalized;
 
         // Move the player character
         _playerCharacter.Move(moveDirection);
