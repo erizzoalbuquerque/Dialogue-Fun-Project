@@ -22,7 +22,7 @@ public class Interactor : MonoBehaviour
         _interactables.Clear();
 
         //Overlap a sphere in front of the player to check for interactables
-        Collider[] hitColliders = Physics.OverlapSphere(transform.TransformPoint(_localOffset), _overlapRadius);
+        Collider2D[] hitColliders = Physics2D.OverlapCircleAll((Vector2)transform.TransformPoint(_localOffset), _overlapRadius);
         for (int i = 0; i < hitColliders.Length; i++)
         {
             IInteractable interactable = hitColliders[i].GetComponent<IInteractable>();
