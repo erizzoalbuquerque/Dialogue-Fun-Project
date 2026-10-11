@@ -31,6 +31,5 @@ public class InputService : MonoBehaviour
         {
             _playerActionMap.Disable();
         }   
-        print($"Player input {(enable ? "enabled" : "disabled")}");
     }
 }
