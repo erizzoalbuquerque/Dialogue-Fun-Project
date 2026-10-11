@@ -1,0 +1,29 @@
+﻿title: Tree
+---
+(That's a coconut tree.)
+(Like most of them, it has coconuts.)
+(It lacks originality.)
+===
+title: Fisherman_Intro
+position: -292,3
+---
+Fisherman: Hello, there!
+Fisherman: Great to see a new face around!
+Fisherman: What a great day for fishing, isn't it?
+Fisherman: Caught a bunch already. Filled a whole bucket with them!
+Fisherman: Just a matter of time until the next.
+===
+title: Bucket
+position: 313,4
+---
+(You look inside of the fisherman's bucket.)
+(It's full of cheese.)
+(Only cheese.)
+===
+
+title: Fisherman_2
+position: -292,213
+---
+Fisherman: I can almost smell them!
+Fisherman: Just a little more...
+===
