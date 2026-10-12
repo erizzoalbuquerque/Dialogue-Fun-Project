@@ -2062,6 +2062,7 @@ GameObject:
   - component: {fileID: 1245848223}
   - component: {fileID: 1245848221}
   - component: {fileID: 1245848218}
+  - component: {fileID: 1245848229}
   - component: {fileID: 1245848228}
   - component: {fileID: 1245848219}
   m_Layer: 0
@@ -2308,6 +2309,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _dialogueNode: Fisherman_Intro
+--- !u!114 &1245848229
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1245848217}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b3e570dc78d3b7b41bd8ba182ac09700, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueSystem.DialogueCharacter
+  _name: Cheeserman
+  _voice: {fileID: 11400000, guid: 23813515b8ae14d4eabf37863f465f1d, type: 2}
+  _bobblingPivot: {fileID: 1992589243}
 --- !u!1 &1380970881
 GameObject:
   m_ObjectHideFlags: 0

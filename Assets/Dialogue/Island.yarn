@@ -1,29 +1,92 @@
-﻿title: Tree
+title: Initilization
+position: -42,-401
 ---
-(That's a coconut tree.)
-(Like most of them, it has coconuts.)
-(It lacks originality.)
+<<enum StoryStage>>
+    <<case Intro>>
+    <<case SawCheese>>
+    <<case CaughtCheese>>
+<<endenum>>
+<<declare $storyStage = StoryStage.Intro>>
 ===
+
 title: Fisherman_Intro
 position: -292,3
 ---
-Fisherman: Hello, there!
-Fisherman: Great to see a new face around!
-Fisherman: What a great day for fishing, isn't it?
-Fisherman: Caught a bunch already. Filled a whole bucket with them!
-Fisherman: Just a matter of time until the next.
+<<once>>
+    Fisherman: Hello, there!
+    Fisherman: Great to see a new face around!
+    Fisherman: What a great day for fishing, isn't it?
+    Fisherman: Caught a bunch already. Filled a whole bucket with them!
+    Fisherman: Just a matter of time for the next one.
+    <<if $storyStage == StoryStage.SawCheese>>
+        <<jump Fisherman_Fishing>>
+    <<endif>>
+    <<stop>> 
+<<endonce>>
+<<if $storyStage == StoryStage.Intro>>
+    <<jump Fisherman_Waiting>>
+<<elseif $storyStage == StoryStage.SawCheese>>
+    <<detour Fisherman_Waiting>>
+    <<jump Fisherman_Fishing>>
+<<else>>
+    <<jump Fisherman_Done>>
+<<endif>>
 ===
-title: Bucket
-position: 313,4
----
-(You look inside of the fisherman's bucket.)
-(It's full of cheese.)
-(Only cheese.)
-===
-
-title: Fisherman_2
+title: Fisherman_Waiting
 position: -292,213
 ---
 Fisherman: I can almost smell them!
 Fisherman: Just a little more...
+===
+title: Bucket
+position: 232,-203
+---
+<<if $storyStage == StoryStage.CaughtCheese>>
+    (You wonder if you could catch a nice piece of bread...)
+<<else>>
+    (You look inside of the fisherman's bucket.)
+    (It's full of cheese.)
+    (Only cheese.)
+    <<set $storyStage = StoryStage.SawCheese>>
+<<endif>>
+===
+
+title: Tree
+position: -46,-208
+---
+(That's a coconut tree.)
+<<if $storyStage == StoryStage.CaughtCheese>>
+    (Upon further inspection, you notice that coconuts are filled with milk inside)
+    (That's a tree with lot of originality, after all.)
+<<else>>
+    (Like most of them, it has coconuts.)
+    (It lacks originality.)
+<<endif>>
+===
+title: Cheese
+position: -311,-200
+---
+(It's cheese. And it's Gouda.)
+===
+
+title: Fisherman_Fishing
+position: -56,215
+---
+-> You know there's only cheese in the bucket, right?
+    Fisherman: What are you talking about?
+    Fisherman: WAIT! 
+    <<wait 2>>
+    Fisherman: I think I just got something!
+    Fisherman: Let's check it out!
+    Fisherman: Wow! We're lucky. That's a big one!
+    <<set $storyStage = StoryStage.CaughtCheese>>
+-> Never mind.
+===
+
+title: Fisherman_Done
+position: 204,203
+---
+<<declare $fisherman_alt_name = "Fisherman">>
+{$fisherman_alt_name}: The world is your oyster. Yellow and full of holes.
+<<set $fisherman_alt_name = "Cheeserman">>
 ===
