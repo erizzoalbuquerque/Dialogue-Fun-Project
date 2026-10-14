@@ -1,4 +1,4 @@
-﻿title: Start
+﻿title:Start
 ---
 <<declare $terrified = false as bool>>
 
@@ -17,15 +17,13 @@ Capsley: Well, it's better than nothing...
 -> Can you sing Sinatra?
     <<jump Sinatra>>
 ===
-
-title: Terrified
+title:Terrified
 position: -3,475
 ---
 Capsley: I'll never sing again.
 Capsley: At least for a few minutes.
 ===
-
-title: Sinatra
+title:Sinatra
 position: 207,235
 ---
 Capsley: ♫ If I can make it there ♫
@@ -36,12 +34,4 @@ Capsley: ...
 <<set $terrified = true>>
 Capsley: Oh, no! It's terrible!
 <<jump Terrified>>
-===
-
-title: Test
-position: -307,163
----
-Capsley: Let's go!
-Capsley: Ooooooooooooooooooooooooooooooooooooooooooooooo!
-Capsley: ..............................................
 ===

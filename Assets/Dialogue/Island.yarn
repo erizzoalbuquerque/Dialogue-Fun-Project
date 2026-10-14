@@ -42,7 +42,7 @@ title: Bucket
 position: 232,-203
 ---
 <<if $storyStage == StoryStage.CaughtCheese>>
-    (You wonder if you could catch a nice piece of bread...)
+    (You wonder if the fisherman could catch a nice piece of bread...)
 <<else>>
     (You look inside of the fisherman's bucket.)
     (It's full of cheese.)
@@ -56,8 +56,8 @@ position: -46,-208
 ---
 (That's a coconut tree.)
 <<if $storyStage == StoryStage.CaughtCheese>>
-    (Upon further inspection, you notice that coconuts are filled with milk inside)
-    (That's a tree with lot of originality, after all.)
+    (Upon further inspection, you notice that coconuts are filled with milk inside.)
+    (It turns out the tree has a lot of originality, after all.)
 <<else>>
     (Like most of them, it has coconuts.)
     (It lacks originality.)
@@ -73,12 +73,18 @@ title: Fisherman_Fishing
 position: -56,215
 ---
 -> You know there's only cheese in the bucket, right?
-    Fisherman: What are you talking about?
-    Fisherman: WAIT! 
-    <<wait 2>>
+    Fisherman: Huh? What are you talking about--
+    <<show_attention_fx YarnSpinnerCustomCommands>>
+    <<wait 0.2>>
+    Fisherman: -- WAIT! 
     Fisherman: I think I just got something!
-    Fisherman: Let's check it out!
+    Fisherman: Let's check it out...
+    <<fade_in YarnSpinnerCustomCommands 0.3>>
+    <<wait 1.5>>
+    <<fade_out YarnSpinnerCustomCommands 0.3>>
+    <<wait 0.5>>
     Fisherman: Wow! We're lucky. That's a big one!
+    <<show_cheese YarnSpinnerCustomCommands>>
     <<set $storyStage = StoryStage.CaughtCheese>>
 -> Never mind.
 ===
