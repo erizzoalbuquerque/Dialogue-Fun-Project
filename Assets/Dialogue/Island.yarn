@@ -73,10 +73,10 @@ title: Fisherman_Fishing
 position: -56,215
 ---
 -> You know there's only cheese in the bucket, right?
-    Fisherman: Huh? What are you talking about--
+    Fisherman: Huh? What are you talking about?
     <<show_attention_fx YarnSpinnerCustomCommands>>
-    <<wait 0.2>>
-    Fisherman: -- WAIT! 
+    <<wait 1>>
+    Fisherman: WAIT! 
     Fisherman: I think I just got something!
     Fisherman: Let's check it out...
     <<fade_in YarnSpinnerCustomCommands 0.3>>
