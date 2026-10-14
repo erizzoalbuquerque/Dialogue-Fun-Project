@@ -650,6 +650,28 @@
                 },
                 {
                     "name": "",
+                    "id": "0d654119-235c-41a6-9de7-20b50d7af3c6",
+                    "path": "<Keyboard>/e",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard&Mouse",
+                    "action": "Submit",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "1b42ec9f-467e-4406-a976-1fdd13b6b612",
+                    "path": "<Keyboard>/space",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard&Mouse",
+                    "action": "Submit",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "27157a7a-a7f7-41d9-b23f-c38e31418571",
                     "path": "<Gamepad>/buttonSouth",
                     "interactions": "",
