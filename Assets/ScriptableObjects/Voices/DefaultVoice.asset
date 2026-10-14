@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TypewriterSounds:
   - {fileID: 8300000, guid: d69f11ca921f8864a8c1714eca546f00, type: 3}
-  BasePitch: 1
+  BasePitch: 1.5
   PitchVariationRange: {x: -0.05, y: 0.05}
   CooldownDuration: 0.05
   BaseVolume: 0.5

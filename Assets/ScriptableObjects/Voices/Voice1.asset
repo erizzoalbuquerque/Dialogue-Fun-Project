@@ -39,7 +39,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: f65ccf22a3c62b4408e25c37881ce9d9, type: 3}
   - {fileID: 8300000, guid: f0a6f2237e4d24141b2d1928e714f425, type: 3}
   - {fileID: 8300000, guid: 8c6b520c9b311c34c9801c79a9bb8fc4, type: 3}
-  BasePitch: 1.1
+  BasePitch: 0.9
   PitchVariationRange: {x: -0.1, y: 0.1}
-  CooldownDuration: 0.065
+  CooldownDuration: 0.075
   BaseVolume: 1
