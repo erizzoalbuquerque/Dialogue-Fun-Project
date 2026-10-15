@@ -13942,7 +13942,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1416065514643003575, guid: 533b9a1d4cf157b41bf1d977b40c8b10, type: 3}
       propertyPath: m_Name
-      value: Dialogue System
+      value: Custom Dialogue System
       objectReference: {fileID: 0}
     - target: {fileID: 1738412857800097029, guid: 533b9a1d4cf157b41bf1d977b40c8b10, type: 3}
       propertyPath: m_AnchorMax.y
@@ -14383,6 +14383,10 @@ PrefabInstance:
     - target: {fileID: 6801339548086589261, guid: 533b9a1d4cf157b41bf1d977b40c8b10, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6801339548750570644, guid: 533b9a1d4cf157b41bf1d977b40c8b10, type: 3}
+      propertyPath: lettersPerSecond
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 6801339548750570651, guid: 533b9a1d4cf157b41bf1d977b40c8b10, type: 3}
       propertyPath: m_SizeDelta.y
