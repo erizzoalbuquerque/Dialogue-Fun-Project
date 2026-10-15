@@ -21,6 +21,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2958262985454349548, guid: 52571f68872914e24837210513edea1d, type: 3}
+      propertyPath: lettersPerSecond
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 2958262985454349548, guid: 52571f68872914e24837210513edea1d, type: 3}
       propertyPath: eventHandlers.Array.size
       value: 2
       objectReference: {fileID: 0}
@@ -94,7 +98,7 @@ PrefabInstance:
       objectReference: {fileID: 392368643174621059, guid: 052faaac586de48259a63d0c4782560b, type: 3}
     - target: {fileID: 7262066351540048079, guid: 52571f68872914e24837210513edea1d, type: 3}
       propertyPath: m_Name
-      value: Dialogue System Variant
+      value: Custom Dialogue System
       objectReference: {fileID: 0}
     - target: {fileID: 7985477256237130417, guid: 52571f68872914e24837210513edea1d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -260,8 +264,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _audioSource: {fileID: 9182714019070396566}
-  _typewriterSound: {fileID: 8300000, guid: aebb065373a3f4e40b931c9be7362178, type: 3}
-  _cooldownDuration: 0.04
+  _defaultVoice: {fileID: 0}
 --- !u!82 &9182714019070396566
 AudioSource:
   m_ObjectHideFlags: 0

@@ -57,7 +57,7 @@ position: -46,-208
 (That's a coconut tree.)
 <<if $storyStage == StoryStage.CaughtCheese>>
     (Upon further inspection, you notice that coconuts are filled with milk inside.)
-    (It turns out the tree has a lot of originality, after all.)
+    (It turns out the tree has a lot of originality after all.)
 <<else>>
     (Like most of them, it has coconuts.)
     (It lacks originality.)
@@ -74,10 +74,10 @@ position: -56,215
 ---
 -> You know there's only cheese in the bucket, right?
     Fisherman: Huh? What are you talking about?
-    <<wait 0.2>>
+    <<wait 0.3>>
     <<show_attention_fx YarnSpinnerCustomCommands>>
-    <<wait 1.5>>
-    Fisherman: WAIT! 
+    <<wait 0.5>>
+    Fisherman: WAIT![pause=1000 /] 
     Fisherman: I think I just got something!
     Fisherman: Let's check it out...
     <<fade_in YarnSpinnerCustomCommands 0.3>>
@@ -94,6 +94,6 @@ title: Fisherman_Done
 position: 204,203
 ---
 <<declare $fisherman_alt_name = "Fisherman">>
-{$fisherman_alt_name}: The world is your oyster. Yellow and full of holes.
+{$fisherman_alt_name}: The world is your oyster. [pause=400/]Yellow and full of holes.
 <<set $fisherman_alt_name = "Cheeserman">>
 ===

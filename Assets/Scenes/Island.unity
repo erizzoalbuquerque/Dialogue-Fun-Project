@@ -7012,7 +7012,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 8300000, guid: c94c8e5d9bd3f694180c1b4d4985c053, type: 3}
+  m_Resource: {fileID: 8300000, guid: 4a110f5feb0a71e4f91691ae14e91177, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.8
   m_Pitch: 1
@@ -13217,8 +13217,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa2695aa21460064689c5bbb4432d6ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _overlapRadius: 2
-  _localOffset: {x: 0, y: 0, z: 0}
+  _overlapRadius: 1.65
+  _localOffset: {x: 0, y: 0.6, z: 0}
   _ignoreRoot: {fileID: 1985480061}
   _interactionIndicator: {fileID: 641484711}
 --- !u!114 &1985480063
