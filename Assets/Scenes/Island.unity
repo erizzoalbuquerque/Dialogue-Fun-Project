@@ -625,6 +625,7 @@ GameObject:
   m_Component:
   - component: {fileID: 665172631}
   - component: {fileID: 665172632}
+  - component: {fileID: 665172633}
   m_Layer: 0
   m_Name: Visual
   m_TagString: Untagged
@@ -672,7 +673,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 1146859540}
+  - {fileID: 2100000, guid: 105f2b2887ff2594287b9b7e22f6b56e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -705,6 +706,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 1
+--- !u!114 &665172633
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 665172630}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee158225ee1e59f4791627785501d950, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: AllIn1SpriteShaderAssembly::AllIn1SpriteShader.AllIn1Shader
+  currentShaderType: 0
+  normalStrength: 5
+  normalSmoothing: 1
+  computingNormal: 0
 --- !u!1 &714945738
 GameObject:
   m_ObjectHideFlags: 0
@@ -7900,17 +7917,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1380970882}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1688954839 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2960720565388284864, guid: 533b9a1d4cf157b41bf1d977b40c8b10, type: 3}
-  m_PrefabInstance: {fileID: 1091692462013167327}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 96b8b780333766b469e9bbeccbd453e4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1732358066
 GameObject:
   m_ObjectHideFlags: 0
@@ -7928,7 +7934,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!199 &1732358067
 ParticleSystemRenderer:
   serializedVersion: 6
@@ -8198,7 +8204,7 @@ ParticleSystem:
     startColor:
       serializedVersion: 2
       minMaxState: 0
-      minColor: {r: 1, g: 1, b: 1, a: 1}
+      minColor: {r: 0.7924528, g: 0.7924528, b: 0.7924528, a: 1}
       maxColor: {r: 1, g: 1, b: 1, a: 0.6431373}
       maxGradient:
         serializedVersion: 2
@@ -8580,7 +8586,7 @@ ParticleSystem:
         m_RotationOrder: 4
     randomizeRotationDirection: 0
     gravitySource: 0
-    maxNumParticles: 1000
+    maxNumParticles: 10
     customEmitterVelocity: {x: 0, y: 0, z: 0}
     size3D: 0
     rotation3D: 0
@@ -8845,9 +8851,9 @@ ParticleSystem:
     serializedVersion: 4
     rateOverTime:
       serializedVersion: 2
-      minMaxState: 0
-      scalar: 1
-      minScalar: 10
+      minMaxState: 3
+      scalar: 0.6
+      minScalar: 0.1
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -14012,354 +14018,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2854986089942574991, guid: 533b9a1d4cf157b41bf1d977b40c8b10, type: 3}
-      propertyPath: _characterMumblingPlayer
-      value: 
-      objectReference: {fileID: 1688954839}
-    - target: {fileID: 2960720565388284864, guid: 533b9a1d4cf157b41bf1d977b40c8b10, type: 3}
-      propertyPath: _basePitch
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 2960720565388284864, guid: 533b9a1d4cf157b41bf1d977b40c8b10, type: 3}
-      propertyPath: _defaultVoice
-      value: 
-      objectReference: {fileID: 11400000, guid: 83ae7e9be941a144e9fd8a99566a8979, type: 2}
-    - target: {fileID: 2960720565388284864, guid: 533b9a1d4cf157b41bf1d977b40c8b10, type: 3}
-      propertyPath: _cooldownDuration
-      value: 0.04
-      objectReference: {fileID: 0}
-    - target: {fileID: 2960720565388284864, guid: 533b9a1d4cf157b41bf1d977b40c8b10, type: 3}
-      propertyPath: _typewriterSounds.Array.size
-      value: 46
-      objectReference: {fileID: 0}
-    - target: {fileID: 2960720565388284864, guid: 533b9a1d4cf157b41bf1d977b40c8b10, type: 3}
-      propertyPath: '_typewriterSounds.Array.data[0]'
-      value: 
-      objectReference: {fileID: 8300000, guid: 87736c07d10e46c41832b215510acca6, type: 3}
-    - target: {fileID: 2960720565388284864, guid: 533b9a1d4cf157b41bf1d977b40c8b10, type: 3}
-      propertyPath: '_typewriterSounds.Array.data[1]'
-      value: 
-      objectReference: {fileID: 8300000, guid: 48d40a135ff988c49a7ff6bf87f35a21, type: 3}
-    - target: {fileID: 2960720565388284864, guid: 533b9a1d4cf157b41bf1d977b40c8b10, type: 3}
-      propertyPath: '_typewriterSounds.Array.data[2]'
-      value: 
-      objectReference: {fileID: 8300000, guid: e57fd9193976acf47ad14a0fe6400a3f, type: 3}
-    - target: {fileID: 2960720565388284864, guid: 533b9a1d4cf157b41bf1d977b40c8b10, type: 3}
-      propertyPath: '_typewriterSounds.Array.data[3]'
-      value: 
-      objectReference: {fileID: 8300000, guid: 083d93270fb0d644ba12bf64c3f79224, type: 3}
-    - target: {fileID: 2960720565388284864, guid: 533b9a1d4cf157b41bf1d977b40c8b10, type: 3}
-      propertyPath: '_typewriterSounds.Array.data[4]'
-      value: 
-      objectReference: {fileID: 8300000, guid: 33e2d99b8a0b92347a362f74e8f273aa, type: 3}
-    - target: {fileID: 2960720565388284864, guid: 533b9a1d4cf157b41bf1d977b40c8b10, type: 3}
-      propertyPath: '_typewriterSounds.Array.data[5]'
-      value: 
-      objectReference: {fileID: 8300000, guid: c6d670d13a1d15140907376bba89bc86, type: 3}
-    - target: {fileID: 2960720565388284864, guid: 533b9a1d4cf157b41bf1d977b40c8b10, type: 3}
-      propertyPath: '_typewriterSounds.Array.data[6]'
-      value: 
-      objectReference: {fileID: 8300000, guid: 035588651aeb52b46af774b79d051a63, type: 3}
-    - target: {fileID: 2960720565388284864, guid: 533b9a1d4cf157b41bf1d977b40c8b10, type: 3}
-      propertyPath: '_typewriterSounds.Array.data[7]'
-      value: 
-      objectReference: {fileID: 8300000, guid: 29171c46ef0d50345a9bdc22c31afd67, type: 3}
-    - target: {fileID: 2960720565388284864, guid: 533b9a1d4cf157b41bf1d977b40c8b10, type: 3}
-      propertyPath: '_typewriterSounds.Array.data[8]'
-      value: 
-      objectReference: {fileID: 8300000, guid: 17be7a347920514459d74319dd63d2cb, type: 3}
-    - target: {fileID: 2960720565388284864, guid: 533b9a1d4cf157b41bf1d977b40c8b10, type: 3}
-      propertyPath: '_typewriterSounds.Array.data[9]'
-      value: 
-      objectReference: {fileID: 8300000, guid: bdc0b36410cb2ee429caca7f37bee697, type: 3}
-    - target: {fileID: 2960720565388284864, guid: 533b9a1d4cf157b41bf1d977b40c8b10, type: 3}
-      propertyPath: '_typewriterSounds.Array.data[10]'
-      value: 
-      objectReference: {fileID: 8300000, guid: c05086578c20e4b458533bcad2ef393f, type: 3}
-    - target: {fileID: 2960720565388284864, guid: 533b9a1d4cf157b41bf1d977b40c8b10, type: 3}
-      propertyPath: '_typewriterSounds.Array.data[11]'
-      value: 
-      objectReference: {fileID: 8300000, guid: a06b5504daa268743b08cf1208766757, type: 3}
-    - target: {fileID: 2960720565388284864, guid: 533b9a1d4cf157b41bf1d977b40c8b10, type: 3}
-      propertyPath: '_typewriterSounds.Array.data[12]'
-      value: 
-      objectReference: {fileID: 8300000, guid: 638a0ca95a9cd344297dd08fa7682c22, type: 3}
-    - target: {fileID: 2960720565388284864, guid: 533b9a1d4cf157b41bf1d977b40c8b10, type: 3}
-      propertyPath: '_typewriterSounds.Array.data[13]'
-      value: 
-      objectReference: {fileID: 8300000, guid: e4ee5d82786be9043aa0a38c6c042416, type: 3}
-    - target: {fileID: 2960720565388284864, guid: 533b9a1d4cf157b41bf1d977b40c8b10, type: 3}
-      propertyPath: '_typewriterSounds.Array.data[14]'
-      value: 
-      objectReference: {fileID: 8300000, guid: 59d186f89201f694aa40031bf2c07e1d, type: 3}
-    - target: {fileID: 2960720565388284864, guid: 533b9a1d4cf157b41bf1d977b40c8b10, type: 3}
-      propertyPath: '_typewriterSounds.Array.data[15]'
-      value: 
-      objectReference: {fileID: 8300000, guid: cac8d4f3e86cf73438893ac9f1aef2c9, type: 3}
-    - target: {fileID: 2960720565388284864, guid: 533b9a1d4cf157b41bf1d977b40c8b10, type: 3}
-      propertyPath: '_typewriterSounds.Array.data[16]'
-      value: 
-      objectReference: {fileID: 8300000, guid: bd5ad07a55a101b4ca071ee73cef116a, type: 3}
-    - target: {fileID: 2960720565388284864, guid: 533b9a1d4cf157b41bf1d977b40c8b10, type: 3}
-      propertyPath: '_typewriterSounds.Array.data[17]'
-      value: 
-      objectReference: {fileID: 8300000, guid: ab7ef373f045dbd44a8b200d62f07a6e, type: 3}
-    - target: {fileID: 2960720565388284864, guid: 533b9a1d4cf157b41bf1d977b40c8b10, type: 3}
-      propertyPath: '_typewriterSounds.Array.data[18]'
-      value: 
-      objectReference: {fileID: 8300000, guid: 29fa6ba9c2b9f0e439c12f07f18f17d4, type: 3}
-    - target: {fileID: 2960720565388284864, guid: 533b9a1d4cf157b41bf1d977b40c8b10, type: 3}
-      propertyPath: '_typewriterSounds.Array.data[19]'
-      value: 
-      objectReference: {fileID: 8300000, guid: 556461b6027e1a24ea2b6854e9399b09, type: 3}
-    - target: {fileID: 2960720565388284864, guid: 533b9a1d4cf157b41bf1d977b40c8b10, type: 3}
-      propertyPath: '_typewriterSounds.Array.data[20]'
-      value: 
-      objectReference: {fileID: 8300000, guid: 92cbeb9b4864ee14a9084eabf6fa08f9, type: 3}
-    - target: {fileID: 2960720565388284864, guid: 533b9a1d4cf157b41bf1d977b40c8b10, type: 3}
-      propertyPath: '_typewriterSounds.Array.data[21]'
-      value: 
-      objectReference: {fileID: 8300000, guid: d7250eed701fc884897ed7dc7c5b7eb6, type: 3}
-    - target: {fileID: 2960720565388284864, guid: 533b9a1d4cf157b41bf1d977b40c8b10, type: 3}
-      propertyPath: '_typewriterSounds.Array.data[22]'
-      value: 
-      objectReference: {fileID: 8300000, guid: 9ff32e44fafa73f4b8537966cf692613, type: 3}
-    - target: {fileID: 2960720565388284864, guid: 533b9a1d4cf157b41bf1d977b40c8b10, type: 3}
-      propertyPath: '_typewriterSounds.Array.data[23]'
-      value: 
-      objectReference: {fileID: 8300000, guid: 0508e35797864c24abfc42a7d4425fa2, type: 3}
-    - target: {fileID: 2960720565388284864, guid: 533b9a1d4cf157b41bf1d977b40c8b10, type: 3}
-      propertyPath: '_typewriterSounds.Array.data[24]'
-      value: 
-      objectReference: {fileID: 8300000, guid: 942b98ee5fbfefa4faa9fb8ea42f0fb6, type: 3}
-    - target: {fileID: 2960720565388284864, guid: 533b9a1d4cf157b41bf1d977b40c8b10, type: 3}
-      propertyPath: '_typewriterSounds.Array.data[25]'
-      value: 
-      objectReference: {fileID: 8300000, guid: bb2fcba0e2479b74a8074c7a7be8a9c9, type: 3}
-    - target: {fileID: 2960720565388284864, guid: 533b9a1d4cf157b41bf1d977b40c8b10, type: 3}
-      propertyPath: '_typewriterSounds.Array.data[26]'
-      value: 
-      objectReference: {fileID: 8300000, guid: 04d76517a1a671f4599c5e7663d2e1a2, type: 3}
-    - target: {fileID: 2960720565388284864, guid: 533b9a1d4cf157b41bf1d977b40c8b10, type: 3}
-      propertyPath: '_typewriterSounds.Array.data[27]'
-      value: 
-      objectReference: {fileID: 8300000, guid: ca0de4cab103ad2438234c8fc156489e, type: 3}
-    - target: {fileID: 2960720565388284864, guid: 533b9a1d4cf157b41bf1d977b40c8b10, type: 3}
-      propertyPath: '_typewriterSounds.Array.data[28]'
-      value: 
-      objectReference: {fileID: 8300000, guid: 95db21f5e5642354fbd3eb3cb940868f, type: 3}
-    - target: {fileID: 2960720565388284864, guid: 533b9a1d4cf157b41bf1d977b40c8b10, type: 3}
-      propertyPath: '_typewriterSounds.Array.data[29]'
-      value: 
-      objectReference: {fileID: 8300000, guid: f4b91b255c917974aaea49622248d9f7, type: 3}
-    - target: {fileID: 2960720565388284864, guid: 533b9a1d4cf157b41bf1d977b40c8b10, type: 3}
-      propertyPath: '_typewriterSounds.Array.data[30]'
-      value: 
-      objectReference: {fileID: 8300000, guid: 91252a6971babda4ea4de55c59420a46, type: 3}
-    - target: {fileID: 2960720565388284864, guid: 533b9a1d4cf157b41bf1d977b40c8b10, type: 3}
-      propertyPath: '_typewriterSounds.Array.data[31]'
-      value: 
-      objectReference: {fileID: 8300000, guid: 0c6fd1854f44e90428f95a6dcb5c3c50, type: 3}
-    - target: {fileID: 2960720565388284864, guid: 533b9a1d4cf157b41bf1d977b40c8b10, type: 3}
-      propertyPath: '_typewriterSounds.Array.data[32]'
-      value: 
-      objectReference: {fileID: 8300000, guid: 482fa0550aa7e3941b63b41e8847592a, type: 3}
-    - target: {fileID: 2960720565388284864, guid: 533b9a1d4cf157b41bf1d977b40c8b10, type: 3}
-      propertyPath: '_typewriterSounds.Array.data[33]'
-      value: 
-      objectReference: {fileID: 8300000, guid: 9de88454f33425f4eb2c88ebcfae392a, type: 3}
-    - target: {fileID: 2960720565388284864, guid: 533b9a1d4cf157b41bf1d977b40c8b10, type: 3}
-      propertyPath: '_typewriterSounds.Array.data[34]'
-      value: 
-      objectReference: {fileID: 8300000, guid: 5fa0137e4d9080b45a59f27b7dc4faea, type: 3}
-    - target: {fileID: 2960720565388284864, guid: 533b9a1d4cf157b41bf1d977b40c8b10, type: 3}
-      propertyPath: '_typewriterSounds.Array.data[35]'
-      value: 
-      objectReference: {fileID: 8300000, guid: 0301cf6b43aabca4881c7929546cd108, type: 3}
-    - target: {fileID: 2960720565388284864, guid: 533b9a1d4cf157b41bf1d977b40c8b10, type: 3}
-      propertyPath: '_typewriterSounds.Array.data[36]'
-      value: 
-      objectReference: {fileID: 8300000, guid: 8be7dc1bb90fd3e438ade44820fdd793, type: 3}
-    - target: {fileID: 2960720565388284864, guid: 533b9a1d4cf157b41bf1d977b40c8b10, type: 3}
-      propertyPath: '_typewriterSounds.Array.data[37]'
-      value: 
-      objectReference: {fileID: 8300000, guid: 2725ec61f5dd7284ea6cb8ebc3f460b6, type: 3}
-    - target: {fileID: 2960720565388284864, guid: 533b9a1d4cf157b41bf1d977b40c8b10, type: 3}
-      propertyPath: '_typewriterSounds.Array.data[38]'
-      value: 
-      objectReference: {fileID: 8300000, guid: 40d19af51f7cb4b4cbfc01513efffcb4, type: 3}
-    - target: {fileID: 2960720565388284864, guid: 533b9a1d4cf157b41bf1d977b40c8b10, type: 3}
-      propertyPath: '_typewriterSounds.Array.data[39]'
-      value: 
-      objectReference: {fileID: 8300000, guid: 7f0d6c823c231004ab18303034546be1, type: 3}
-    - target: {fileID: 2960720565388284864, guid: 533b9a1d4cf157b41bf1d977b40c8b10, type: 3}
-      propertyPath: '_typewriterSounds.Array.data[40]'
-      value: 
-      objectReference: {fileID: 8300000, guid: 834d743170c539c43a87b4f9ab4b2d88, type: 3}
-    - target: {fileID: 2960720565388284864, guid: 533b9a1d4cf157b41bf1d977b40c8b10, type: 3}
-      propertyPath: '_typewriterSounds.Array.data[41]'
-      value: 
-      objectReference: {fileID: 8300000, guid: 7d63035288b2af74e9395ce9d6806c03, type: 3}
-    - target: {fileID: 2960720565388284864, guid: 533b9a1d4cf157b41bf1d977b40c8b10, type: 3}
-      propertyPath: '_typewriterSounds.Array.data[42]'
-      value: 
-      objectReference: {fileID: 8300000, guid: 1a30918c2da98734f9b7999948e3e894, type: 3}
-    - target: {fileID: 2960720565388284864, guid: 533b9a1d4cf157b41bf1d977b40c8b10, type: 3}
-      propertyPath: '_typewriterSounds.Array.data[43]'
-      value: 
-      objectReference: {fileID: 8300000, guid: 7dd20654fabe0b049bbc10344e6aab69, type: 3}
-    - target: {fileID: 2960720565388284864, guid: 533b9a1d4cf157b41bf1d977b40c8b10, type: 3}
-      propertyPath: '_typewriterSounds.Array.data[44]'
-      value: 
-      objectReference: {fileID: 8300000, guid: e23874eb2ac6511429a8138f2714d388, type: 3}
-    - target: {fileID: 2960720565388284864, guid: 533b9a1d4cf157b41bf1d977b40c8b10, type: 3}
-      propertyPath: '_typewriterSounds.Array.data[45]'
-      value: 
-      objectReference: {fileID: 8300000, guid: 925f609b12d28af40aa12ea82c6fd54e, type: 3}
-    - target: {fileID: 2960720565388284864, guid: 533b9a1d4cf157b41bf1d977b40c8b10, type: 3}
-      propertyPath: '_typewriterSounds.Array.data[46]'
-      value: 
-      objectReference: {fileID: 8300000, guid: c05086578c20e4b458533bcad2ef393f, type: 3}
-    - target: {fileID: 2960720565388284864, guid: 533b9a1d4cf157b41bf1d977b40c8b10, type: 3}
-      propertyPath: '_typewriterSounds.Array.data[47]'
-      value: 
-      objectReference: {fileID: 8300000, guid: a06b5504daa268743b08cf1208766757, type: 3}
-    - target: {fileID: 2960720565388284864, guid: 533b9a1d4cf157b41bf1d977b40c8b10, type: 3}
-      propertyPath: '_typewriterSounds.Array.data[48]'
-      value: 
-      objectReference: {fileID: 8300000, guid: 638a0ca95a9cd344297dd08fa7682c22, type: 3}
-    - target: {fileID: 2960720565388284864, guid: 533b9a1d4cf157b41bf1d977b40c8b10, type: 3}
-      propertyPath: '_typewriterSounds.Array.data[49]'
-      value: 
-      objectReference: {fileID: 8300000, guid: e4ee5d82786be9043aa0a38c6c042416, type: 3}
-    - target: {fileID: 2960720565388284864, guid: 533b9a1d4cf157b41bf1d977b40c8b10, type: 3}
-      propertyPath: '_typewriterSounds.Array.data[50]'
-      value: 
-      objectReference: {fileID: 8300000, guid: 59d186f89201f694aa40031bf2c07e1d, type: 3}
-    - target: {fileID: 2960720565388284864, guid: 533b9a1d4cf157b41bf1d977b40c8b10, type: 3}
-      propertyPath: '_typewriterSounds.Array.data[51]'
-      value: 
-      objectReference: {fileID: 8300000, guid: cac8d4f3e86cf73438893ac9f1aef2c9, type: 3}
-    - target: {fileID: 2960720565388284864, guid: 533b9a1d4cf157b41bf1d977b40c8b10, type: 3}
-      propertyPath: '_typewriterSounds.Array.data[52]'
-      value: 
-      objectReference: {fileID: 8300000, guid: bd5ad07a55a101b4ca071ee73cef116a, type: 3}
-    - target: {fileID: 2960720565388284864, guid: 533b9a1d4cf157b41bf1d977b40c8b10, type: 3}
-      propertyPath: '_typewriterSounds.Array.data[53]'
-      value: 
-      objectReference: {fileID: 8300000, guid: ab7ef373f045dbd44a8b200d62f07a6e, type: 3}
-    - target: {fileID: 2960720565388284864, guid: 533b9a1d4cf157b41bf1d977b40c8b10, type: 3}
-      propertyPath: '_typewriterSounds.Array.data[54]'
-      value: 
-      objectReference: {fileID: 8300000, guid: 29fa6ba9c2b9f0e439c12f07f18f17d4, type: 3}
-    - target: {fileID: 2960720565388284864, guid: 533b9a1d4cf157b41bf1d977b40c8b10, type: 3}
-      propertyPath: '_typewriterSounds.Array.data[55]'
-      value: 
-      objectReference: {fileID: 8300000, guid: 556461b6027e1a24ea2b6854e9399b09, type: 3}
-    - target: {fileID: 2960720565388284864, guid: 533b9a1d4cf157b41bf1d977b40c8b10, type: 3}
-      propertyPath: '_typewriterSounds.Array.data[56]'
-      value: 
-      objectReference: {fileID: 8300000, guid: 92cbeb9b4864ee14a9084eabf6fa08f9, type: 3}
-    - target: {fileID: 2960720565388284864, guid: 533b9a1d4cf157b41bf1d977b40c8b10, type: 3}
-      propertyPath: '_typewriterSounds.Array.data[57]'
-      value: 
-      objectReference: {fileID: 8300000, guid: d7250eed701fc884897ed7dc7c5b7eb6, type: 3}
-    - target: {fileID: 2960720565388284864, guid: 533b9a1d4cf157b41bf1d977b40c8b10, type: 3}
-      propertyPath: '_typewriterSounds.Array.data[58]'
-      value: 
-      objectReference: {fileID: 8300000, guid: 9ff32e44fafa73f4b8537966cf692613, type: 3}
-    - target: {fileID: 2960720565388284864, guid: 533b9a1d4cf157b41bf1d977b40c8b10, type: 3}
-      propertyPath: '_typewriterSounds.Array.data[59]'
-      value: 
-      objectReference: {fileID: 8300000, guid: 0508e35797864c24abfc42a7d4425fa2, type: 3}
-    - target: {fileID: 2960720565388284864, guid: 533b9a1d4cf157b41bf1d977b40c8b10, type: 3}
-      propertyPath: '_typewriterSounds.Array.data[60]'
-      value: 
-      objectReference: {fileID: 8300000, guid: 942b98ee5fbfefa4faa9fb8ea42f0fb6, type: 3}
-    - target: {fileID: 2960720565388284864, guid: 533b9a1d4cf157b41bf1d977b40c8b10, type: 3}
-      propertyPath: '_typewriterSounds.Array.data[61]'
-      value: 
-      objectReference: {fileID: 8300000, guid: bb2fcba0e2479b74a8074c7a7be8a9c9, type: 3}
-    - target: {fileID: 2960720565388284864, guid: 533b9a1d4cf157b41bf1d977b40c8b10, type: 3}
-      propertyPath: '_typewriterSounds.Array.data[62]'
-      value: 
-      objectReference: {fileID: 8300000, guid: 04d76517a1a671f4599c5e7663d2e1a2, type: 3}
-    - target: {fileID: 2960720565388284864, guid: 533b9a1d4cf157b41bf1d977b40c8b10, type: 3}
-      propertyPath: '_typewriterSounds.Array.data[63]'
-      value: 
-      objectReference: {fileID: 8300000, guid: ca0de4cab103ad2438234c8fc156489e, type: 3}
-    - target: {fileID: 2960720565388284864, guid: 533b9a1d4cf157b41bf1d977b40c8b10, type: 3}
-      propertyPath: '_typewriterSounds.Array.data[64]'
-      value: 
-      objectReference: {fileID: 8300000, guid: 95db21f5e5642354fbd3eb3cb940868f, type: 3}
-    - target: {fileID: 2960720565388284864, guid: 533b9a1d4cf157b41bf1d977b40c8b10, type: 3}
-      propertyPath: '_typewriterSounds.Array.data[65]'
-      value: 
-      objectReference: {fileID: 8300000, guid: f4b91b255c917974aaea49622248d9f7, type: 3}
-    - target: {fileID: 2960720565388284864, guid: 533b9a1d4cf157b41bf1d977b40c8b10, type: 3}
-      propertyPath: '_typewriterSounds.Array.data[66]'
-      value: 
-      objectReference: {fileID: 8300000, guid: 91252a6971babda4ea4de55c59420a46, type: 3}
-    - target: {fileID: 2960720565388284864, guid: 533b9a1d4cf157b41bf1d977b40c8b10, type: 3}
-      propertyPath: '_typewriterSounds.Array.data[67]'
-      value: 
-      objectReference: {fileID: 8300000, guid: 0c6fd1854f44e90428f95a6dcb5c3c50, type: 3}
-    - target: {fileID: 2960720565388284864, guid: 533b9a1d4cf157b41bf1d977b40c8b10, type: 3}
-      propertyPath: '_typewriterSounds.Array.data[68]'
-      value: 
-      objectReference: {fileID: 8300000, guid: 482fa0550aa7e3941b63b41e8847592a, type: 3}
-    - target: {fileID: 2960720565388284864, guid: 533b9a1d4cf157b41bf1d977b40c8b10, type: 3}
-      propertyPath: '_typewriterSounds.Array.data[69]'
-      value: 
-      objectReference: {fileID: 8300000, guid: 9de88454f33425f4eb2c88ebcfae392a, type: 3}
-    - target: {fileID: 2960720565388284864, guid: 533b9a1d4cf157b41bf1d977b40c8b10, type: 3}
-      propertyPath: '_typewriterSounds.Array.data[70]'
-      value: 
-      objectReference: {fileID: 8300000, guid: 5fa0137e4d9080b45a59f27b7dc4faea, type: 3}
-    - target: {fileID: 2960720565388284864, guid: 533b9a1d4cf157b41bf1d977b40c8b10, type: 3}
-      propertyPath: '_typewriterSounds.Array.data[71]'
-      value: 
-      objectReference: {fileID: 8300000, guid: 0301cf6b43aabca4881c7929546cd108, type: 3}
-    - target: {fileID: 2960720565388284864, guid: 533b9a1d4cf157b41bf1d977b40c8b10, type: 3}
-      propertyPath: '_typewriterSounds.Array.data[72]'
-      value: 
-      objectReference: {fileID: 8300000, guid: 8be7dc1bb90fd3e438ade44820fdd793, type: 3}
-    - target: {fileID: 2960720565388284864, guid: 533b9a1d4cf157b41bf1d977b40c8b10, type: 3}
-      propertyPath: '_typewriterSounds.Array.data[73]'
-      value: 
-      objectReference: {fileID: 8300000, guid: 2725ec61f5dd7284ea6cb8ebc3f460b6, type: 3}
-    - target: {fileID: 2960720565388284864, guid: 533b9a1d4cf157b41bf1d977b40c8b10, type: 3}
-      propertyPath: '_typewriterSounds.Array.data[74]'
-      value: 
-      objectReference: {fileID: 8300000, guid: 40d19af51f7cb4b4cbfc01513efffcb4, type: 3}
-    - target: {fileID: 2960720565388284864, guid: 533b9a1d4cf157b41bf1d977b40c8b10, type: 3}
-      propertyPath: '_typewriterSounds.Array.data[75]'
-      value: 
-      objectReference: {fileID: 8300000, guid: 7f0d6c823c231004ab18303034546be1, type: 3}
-    - target: {fileID: 2960720565388284864, guid: 533b9a1d4cf157b41bf1d977b40c8b10, type: 3}
-      propertyPath: '_typewriterSounds.Array.data[76]'
-      value: 
-      objectReference: {fileID: 8300000, guid: 834d743170c539c43a87b4f9ab4b2d88, type: 3}
-    - target: {fileID: 2960720565388284864, guid: 533b9a1d4cf157b41bf1d977b40c8b10, type: 3}
-      propertyPath: '_typewriterSounds.Array.data[77]'
-      value: 
-      objectReference: {fileID: 8300000, guid: 7d63035288b2af74e9395ce9d6806c03, type: 3}
-    - target: {fileID: 2960720565388284864, guid: 533b9a1d4cf157b41bf1d977b40c8b10, type: 3}
-      propertyPath: '_typewriterSounds.Array.data[78]'
-      value: 
-      objectReference: {fileID: 8300000, guid: 1a30918c2da98734f9b7999948e3e894, type: 3}
-    - target: {fileID: 2960720565388284864, guid: 533b9a1d4cf157b41bf1d977b40c8b10, type: 3}
-      propertyPath: '_typewriterSounds.Array.data[79]'
-      value: 
-      objectReference: {fileID: 8300000, guid: 7dd20654fabe0b049bbc10344e6aab69, type: 3}
-    - target: {fileID: 2960720565388284864, guid: 533b9a1d4cf157b41bf1d977b40c8b10, type: 3}
-      propertyPath: '_typewriterSounds.Array.data[80]'
-      value: 
-      objectReference: {fileID: 8300000, guid: e23874eb2ac6511429a8138f2714d388, type: 3}
-    - target: {fileID: 2960720565388284864, guid: 533b9a1d4cf157b41bf1d977b40c8b10, type: 3}
-      propertyPath: '_typewriterSounds.Array.data[81]'
-      value: 
-      objectReference: {fileID: 8300000, guid: 925f609b12d28af40aa12ea82c6fd54e, type: 3}
     - target: {fileID: 6801339548086589261, guid: 533b9a1d4cf157b41bf1d977b40c8b10, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -14383,10 +14041,6 @@ PrefabInstance:
     - target: {fileID: 6801339548086589261, guid: 533b9a1d4cf157b41bf1d977b40c8b10, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6801339548750570644, guid: 533b9a1d4cf157b41bf1d977b40c8b10, type: 3}
-      propertyPath: lettersPerSecond
-      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 6801339548750570651, guid: 533b9a1d4cf157b41bf1d977b40c8b10, type: 3}
       propertyPath: m_SizeDelta.y
@@ -14421,6 +14075,111 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 533b9a1d4cf157b41bf1d977b40c8b10, type: 3}
+--- !u!1001 &7665087289846948083
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4825626161612246902, guid: b4ed9a006557de84f8bac2cba1940c63, type: 3}
+      propertyPath: m_Name
+      value: Option Item
+      objectReference: {fileID: 0}
+    - target: {fileID: 5980363058956422805, guid: b4ed9a006557de84f8bac2cba1940c63, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5980363058956422805, guid: b4ed9a006557de84f8bac2cba1940c63, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5980363058956422805, guid: b4ed9a006557de84f8bac2cba1940c63, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5980363058956422805, guid: b4ed9a006557de84f8bac2cba1940c63, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5980363058956422805, guid: b4ed9a006557de84f8bac2cba1940c63, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5980363058956422805, guid: b4ed9a006557de84f8bac2cba1940c63, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5980363058956422805, guid: b4ed9a006557de84f8bac2cba1940c63, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 400
+      objectReference: {fileID: 0}
+    - target: {fileID: 5980363058956422805, guid: b4ed9a006557de84f8bac2cba1940c63, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5980363058956422805, guid: b4ed9a006557de84f8bac2cba1940c63, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5980363058956422805, guid: b4ed9a006557de84f8bac2cba1940c63, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5980363058956422805, guid: b4ed9a006557de84f8bac2cba1940c63, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5980363058956422805, guid: b4ed9a006557de84f8bac2cba1940c63, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5980363058956422805, guid: b4ed9a006557de84f8bac2cba1940c63, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5980363058956422805, guid: b4ed9a006557de84f8bac2cba1940c63, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5980363058956422805, guid: b4ed9a006557de84f8bac2cba1940c63, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5980363058956422805, guid: b4ed9a006557de84f8bac2cba1940c63, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 253
+      objectReference: {fileID: 0}
+    - target: {fileID: 5980363058956422805, guid: b4ed9a006557de84f8bac2cba1940c63, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 35.4055
+      objectReference: {fileID: 0}
+    - target: {fileID: 5980363058956422805, guid: b4ed9a006557de84f8bac2cba1940c63, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5980363058956422805, guid: b4ed9a006557de84f8bac2cba1940c63, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5980363058956422805, guid: b4ed9a006557de84f8bac2cba1940c63, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8902476724846327130, guid: b4ed9a006557de84f8bac2cba1940c63, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 6384299272635883910, guid: c38a89c11ad7c7347b49d473ae595081, type: 2}
+    - target: {fileID: 8902476724846327130, guid: b4ed9a006557de84f8bac2cba1940c63, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b4ed9a006557de84f8bac2cba1940c63, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -14436,3 +14195,4 @@ SceneRoots:
   - {fileID: 1127631415}
   - {fileID: 1801118899}
   - {fileID: 1732358069}
+  - {fileID: 7665087289846948083}

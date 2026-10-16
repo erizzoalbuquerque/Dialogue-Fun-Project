@@ -78,7 +78,7 @@ position: -56,215
     <<show_attention_fx YarnSpinnerCustomCommands>>
     <<wait 0.5>>
     Fisherman: WAIT![pause=1000 /] 
-    Fisherman: I think I just got something!
+    Fisherman: I think I got something!
     Fisherman: Let's check it out...
     <<fade_in YarnSpinnerCustomCommands 0.3>>
     <<wait 1.5>>
