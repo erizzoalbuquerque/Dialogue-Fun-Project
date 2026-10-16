@@ -70,4 +70,9 @@ public class Interactor : MonoBehaviour
             _interactionIndicator.SetActive(show);
         }
     }
+
+    void OnDisable()
+    {
+        StartInteractionIndicator(false);
+    }
 }

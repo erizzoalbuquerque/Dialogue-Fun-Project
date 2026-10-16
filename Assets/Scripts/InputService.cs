@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -7,6 +8,8 @@ public class InputService : MonoBehaviour
 
     InputActionMap _playerActionMap;
     InputActionMap _uiActionMap;
+
+    public event Action<bool> playerActionMapEnabledChanged;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -30,6 +33,8 @@ public class InputService : MonoBehaviour
         else
         {
             _playerActionMap.Disable();
-        }   
+        }
+
+        playerActionMapEnabledChanged?.Invoke(enable);   
     }
 }

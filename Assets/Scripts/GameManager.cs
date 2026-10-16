@@ -7,6 +7,8 @@ public class GameManager : MonoBehaviour
 
     [SerializeField] InputService _inputService;
     [SerializeField] DialogueRunner _dialogueRunner;
+
+    public InputService InputService => _inputService;
     
     public static GameManager Instance
     {
