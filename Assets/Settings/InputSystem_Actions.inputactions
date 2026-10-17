@@ -244,6 +244,17 @@
                 },
                 {
                     "name": "",
+                    "id": "22d085fe-114d-403b-abfb-4662bb41fcec",
+                    "path": "<Keyboard>/enter",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard&Mouse",
+                    "action": "Interact",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "b45940f2-63e1-40cf-a3f9-05c163f3b326",
                     "path": "<Keyboard>/space",
                     "interactions": "",
@@ -652,6 +663,17 @@
                     "name": "",
                     "id": "0d654119-235c-41a6-9de7-20b50d7af3c6",
                     "path": "<Keyboard>/e",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard&Mouse",
+                    "action": "Submit",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "93dfd72e-c9f0-40a2-b9c2-d2ae0a3a6e39",
+                    "path": "<Keyboard>/enter",
                     "interactions": "",
                     "processors": "",
                     "groups": "Keyboard&Mouse",
