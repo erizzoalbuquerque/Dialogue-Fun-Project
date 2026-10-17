@@ -87,6 +87,7 @@ position: -56,215
     Fisherman: Wow! We're lucky. That's a big one!
     <<show_cheese YarnSpinnerCustomCommands>>
     <<set $storyStage = StoryStage.CaughtCheese>>
+    <<wait 1>>
 -> Never mind.
 ===
 
