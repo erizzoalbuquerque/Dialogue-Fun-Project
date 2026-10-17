@@ -1,4 +1,4 @@
-# Space Yard
+# Yellow Oyster
 
 A tiny mini micro joke "game" for trying out [Yarn Spinner](https://yarnspinner.dev/) (it's great and a lot of fun) and experimenting with a simple to make but cohesive art style. Both things that I want to use in game jams and bigger projects in the future
 
